@@ -14,6 +14,10 @@ import { NgClassComponent } from './directives/ng-class/ng-class.component';
 import { HighlightDirective } from './directives/highlight.directive';
 import { RainbowDirective } from './directives/rainbow.directive';
 import { NgForComponent } from './directives/ng-for/ng-for.component';
+import { SommeComponent } from './components/somme/somme.component';
+import { UserComponent } from './components/user/user.component';
+import { PereComponent } from './components/pere/pere.component';
+import { FilsComponent } from './components/fils/fils.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,11 @@ import { NgForComponent } from './directives/ng-for/ng-for.component';
     NgClassComponent,
     HighlightDirective,
     RainbowDirective,
-    NgForComponent
+    NgForComponent,
+    SommeComponent,
+    UserComponent,
+    PereComponent,
+    FilsComponent
   ],
   imports: [
     BrowserModule,

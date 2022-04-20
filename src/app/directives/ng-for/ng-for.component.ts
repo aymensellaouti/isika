@@ -1,34 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { User } from 'src/app/models/user.model';
 
 @Component({
   selector: 'app-ng-for',
   templateUrl: './ng-for.component.html',
-  styleUrls: ['./ng-for.component.css']
+  styleUrls: ['./ng-for.component.css'],
 })
 export class NgForComponent implements OnInit {
-  users = [
-    {
-      firstname: 'Sylvain',
-      name: 'Boulloud'
-    },
-    {
-      firstname: 'Jeyan',
-      name: 'Cakirlar'
-    },{
-      firstname: 'Elise',
-      name: 'Dassonneville'
-    },{
-      firstname: 'Cheikh',
-      name: 'Dieng'
-    },
-    {
-      firstname: 'Valentin',
-      name: 'Lagarde'
-    },
+  /* ngFor() {} */
+  @Input() users: User[] = [
+    new User('Sylvain', 'Boulloud'),
+    new User('Jeyan', 'Cakirlar'),
+    new User('Elise', 'Dassonneville'),
+    new User('Cheikh', 'Dieng'),
+    new User('Valentin', 'BouLagardelloud'),
   ];
-  constructor() { }
 
-  ngOnInit(): void {
-  }
-
+  constructor() {}
+  /* f(name) {system.out.printlen(name);} */
+  ngOnInit(): void {}
 }

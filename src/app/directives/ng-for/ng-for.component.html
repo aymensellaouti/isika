@@ -1,14 +1,14 @@
 <ol class="list-group">
   <!-- <li *ngFor="let item of list" > -->
   <li
-    *ngFor="let user of users; let i = index; let isOdd = odd"
+    *ngFor="let actuelUser of users; let i = index; let isOdd = odd"
     class="list-group-item"
     [ngClass]="{
       'list-group-item-secondary': isOdd,
       'list-group-item-primary': !isOdd
     }"
   >
-    {{ i + 1 }} : {{ user.firstname }} {{ user.name }}
+    {{ i + 1 }} : <app-user [user]="actuelUser"></app-user>
   </li>
 </ol>
 <!--
