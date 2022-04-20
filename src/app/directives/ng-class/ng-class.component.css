@@ -1,0 +1,11 @@
+.allumee {
+  border: solid 1px black;
+  background-color: yellow;
+  color: black;
+}
+
+.eteinte {
+  border: solid 1px black;
+  background-color: black;
+  color: white;
+}

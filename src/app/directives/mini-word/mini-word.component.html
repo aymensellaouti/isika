@@ -1,0 +1,25 @@
+<p
+  [ngStyle]="{
+    color: color,
+    fontFamily: police,
+    fontSize: size + 'px'
+  }"
+>
+  mini-word works!
+</p>
+
+<div class="row">
+  <div class="col-md-4 col-sm-12">
+    <input type="color" class="form-control" [(ngModel)]="color" />
+  </div>
+  <div class="col-md-4 col-sm-12">
+    <input type="number" class="form-control" [(ngModel)]="size" />
+  </div>
+  <div class="col-md-4 col-sm-12">
+    <select class="form-control" [(ngModel)]="police">
+      <option value="garamond">garamond</option>
+      <option value="arial">arial</option>
+      <option value="verdana">verdana</option>
+    </select>
+  </div>
+</div>

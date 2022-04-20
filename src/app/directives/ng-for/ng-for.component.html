@@ -1,0 +1,21 @@
+<ol class="list-group">
+  <!-- <li *ngFor="let item of list" > -->
+  <li
+    *ngFor="let user of users; let i = index; let isOdd = odd"
+    class="list-group-item"
+    [ngClass]="{
+      'list-group-item-secondary': isOdd,
+      'list-group-item-primary': !isOdd
+    }"
+  >
+    {{ i + 1 }} : {{ user.firstname }} {{ user.name }}
+  </li>
+</ol>
+
+<!--
+  index Le numero de l'iteration
+  odd si l element est paire ou non
+  even si l element est impaire
+  first pour dire si c'est le debut ou non
+  last pour dire si c'est le dernier ou non
+ -->

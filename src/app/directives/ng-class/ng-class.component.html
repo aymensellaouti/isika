@@ -1,0 +1,18 @@
+<p
+  (click)="showHide()"
+  [ngClass]="{
+    eteinte: isAllume,
+    allumee: !isAllume
+  }"
+>
+  ng-class works!
+</p>
+
+<p [hidden]="isAllume">Avec hidden</p>
+<p *ngIf="isAllume">Avec ngIf</p>
+
+<div appHighlight>cc</div>
+
+<p appHighlight>hello</p>
+
+<input type="text" appRainbow />
