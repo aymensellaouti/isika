@@ -1,0 +1,23 @@
+<p>first works!</p>
+<app-second></app-second>
+<h2 [hidden]="isHidden">CC first</h2>
+<p> Bonjour {{ name }}</p>
+<div
+  (click)="changeColor()"
+  [style.backgroundColor]="color"
+>
+  Bonjour</div>
+
+  <input
+    #textInput
+    type="text">
+
+  <button
+    (click)="changeInputContent(textInput.value)"
+  >
+    affiche le contenu de l'input dans une Div
+  </button>
+
+  <div>
+    Le contenu de l'input est {{inputContent}}
+  </div>
